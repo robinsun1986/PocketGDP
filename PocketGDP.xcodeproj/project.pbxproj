@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22A602D5235ED70400773478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A602D4235ED70400773478 /* AppDelegate.swift */; };
+		22A602DC235ED70400773478 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A602DA235ED70400773478 /* Main.storyboard */; };
+		22A602DE235ED70500773478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A602DD235ED70500773478 /* Assets.xcassets */; };
+		22A602E1235ED70500773478 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A602DF235ED70500773478 /* LaunchScreen.storyboard */; };
+		22A602EC235ED70500773478 /* PocketGDPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A602EB235ED70500773478 /* PocketGDPTests.swift */; };
+		22A602F7235ED70500773478 /* PocketGDPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A602F6235ED70500773478 /* PocketGDPUITests.swift */; };
+		22A6030D235F069700773478 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A6030A235F069700773478 /* MainVC.swift */; };
+		22A6030F235F075F00773478 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A6030E235F075F00773478 /* Constants.swift */; };
+		22A60311235F0A1A00773478 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A60310235F0A1A00773478 /* MainVM.swift */; };
+		22A60313235F0A8B00773478 /* CountryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A60312235F0A8B00773478 /* CountryVM.swift */; };
+		22A60316235F0AE300773478 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A60315235F0AE300773478 /* DataManager.swift */; };
+		22A60318235F0B9200773478 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A60317235F0B9200773478 /* Protocols.swift */; };
+		22B10607235F0D910086F411 /* AppCoord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10606235F0D910086F411 /* AppCoord.swift */; };
+		77F8AEEDB78C2091927FE007 /* Pods_PocketGDPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622F695BC8B0FE467C05F85C /* Pods_PocketGDPTests.framework */; };
+		C3F000D9EF22C4E9077BDA9F /* Pods_PocketGDP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E94C69AE387995FED387D2 /* Pods_PocketGDP.framework */; };
+		CFC17FA97A001EE48E61818A /* Pods_PocketGDP_PocketGDPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C31F120C2B1357E8B3AFB7 /* Pods_PocketGDP_PocketGDPUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22A602E8235ED70500773478 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22A602C9235ED70400773478 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A602D0235ED70400773478;
+			remoteInfo = PocketGDP;
+		};
+		22A602F3235ED70500773478 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22A602C9235ED70400773478 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A602D0235ED70400773478;
+			remoteInfo = PocketGDP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		075C8AB3D4198B638C635548 /* Pods-PocketGDP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDP.release.xcconfig"; path = "Target Support Files/Pods-PocketGDP/Pods-PocketGDP.release.xcconfig"; sourceTree = "<group>"; };
+		22A602D1235ED70400773478 /* PocketGDP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketGDP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A602D4235ED70400773478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22A602DB235ED70400773478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22A602DD235ED70500773478 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22A602E0235ED70500773478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22A602E2235ED70500773478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A602E7235ED70500773478 /* PocketGDPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketGDPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A602EB235ED70500773478 /* PocketGDPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketGDPTests.swift; sourceTree = "<group>"; };
+		22A602ED235ED70500773478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A602F2235ED70500773478 /* PocketGDPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketGDPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A602F6235ED70500773478 /* PocketGDPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketGDPUITests.swift; sourceTree = "<group>"; };
+		22A602F8235ED70500773478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A6030A235F069700773478 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		22A6030E235F075F00773478 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		22A60310235F0A1A00773478 /* MainVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		22A60312235F0A8B00773478 /* CountryVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryVM.swift; sourceTree = "<group>"; };
+		22A60315235F0AE300773478 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		22A60317235F0B9200773478 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		22B10606235F0D910086F411 /* AppCoord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoord.swift; sourceTree = "<group>"; };
+		25EFAFA3D7D659534C7B925F /* Pods-PocketGDPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDPTests.release.xcconfig"; path = "Target Support Files/Pods-PocketGDPTests/Pods-PocketGDPTests.release.xcconfig"; sourceTree = "<group>"; };
+		39C31F120C2B1357E8B3AFB7 /* Pods_PocketGDP_PocketGDPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketGDP_PocketGDPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		576E9D145AAE7A583274F531 /* Pods-PocketGDP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDP.debug.xcconfig"; path = "Target Support Files/Pods-PocketGDP/Pods-PocketGDP.debug.xcconfig"; sourceTree = "<group>"; };
+		5FA39DE0900D1D204EECE117 /* Pods-PocketGDP-PocketGDPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDP-PocketGDPUITests.release.xcconfig"; path = "Target Support Files/Pods-PocketGDP-PocketGDPUITests/Pods-PocketGDP-PocketGDPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		622F695BC8B0FE467C05F85C /* Pods_PocketGDPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketGDPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E94C69AE387995FED387D2 /* Pods_PocketGDP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketGDP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF04988D4E2B34FF029F84D0 /* Pods-PocketGDP-PocketGDPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDP-PocketGDPUITests.debug.xcconfig"; path = "Target Support Files/Pods-PocketGDP-PocketGDPUITests/Pods-PocketGDP-PocketGDPUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3DC32082DB5FE734BD2C167 /* Pods-PocketGDPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDPTests.debug.xcconfig"; path = "Target Support Files/Pods-PocketGDPTests/Pods-PocketGDPTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22A602CE235ED70400773478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F000D9EF22C4E9077BDA9F /* Pods_PocketGDP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A602E4235ED70500773478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F8AEEDB78C2091927FE007 /* Pods_PocketGDPTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A602EF235ED70500773478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC17FA97A001EE48E61818A /* Pods_PocketGDP_PocketGDPUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22A602C8235ED70400773478 = {
+			isa = PBXGroup;
+			children = (
+				22A602D3235ED70400773478 /* PocketGDP */,
+				22A602EA235ED70500773478 /* PocketGDPTests */,
+				22A602F5235ED70500773478 /* PocketGDPUITests */,
+				22A602D2235ED70400773478 /* Products */,
+				E6EE94738697D7ED1759E627 /* Pods */,
+				57D5B7B36C7F410167AFEB57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22A602D2235ED70400773478 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22A602D1235ED70400773478 /* PocketGDP.app */,
+				22A602E7235ED70500773478 /* PocketGDPTests.xctest */,
+				22A602F2235ED70500773478 /* PocketGDPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22A602D3235ED70400773478 /* PocketGDP */ = {
+			isa = PBXGroup;
+			children = (
+				22A602D4235ED70400773478 /* AppDelegate.swift */,
+				22B10605235F0D790086F411 /* Coordinator */,
+				22A60314235F0AE300773478 /* Manager */,
+				22A6030B235F069700773478 /* Model */,
+				22A60309235F069700773478 /* View */,
+				22A60308235F069700773478 /* ViewModel */,
+				22A602DA235ED70400773478 /* Main.storyboard */,
+				22A602DD235ED70500773478 /* Assets.xcassets */,
+				22A602DF235ED70500773478 /* LaunchScreen.storyboard */,
+				22A602E2235ED70500773478 /* Info.plist */,
+				22A60317235F0B9200773478 /* Protocols.swift */,
+				22A6030E235F075F00773478 /* Constants.swift */,
+			);
+			path = PocketGDP;
+			sourceTree = "<group>";
+		};
+		22A602EA235ED70500773478 /* PocketGDPTests */ = {
+			isa = PBXGroup;
+			children = (
+				22A602EB235ED70500773478 /* PocketGDPTests.swift */,
+				22A602ED235ED70500773478 /* Info.plist */,
+			);
+			path = PocketGDPTests;
+			sourceTree = "<group>";
+		};
+		22A602F5235ED70500773478 /* PocketGDPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22A602F6235ED70500773478 /* PocketGDPUITests.swift */,
+				22A602F8235ED70500773478 /* Info.plist */,
+			);
+			path = PocketGDPUITests;
+			sourceTree = "<group>";
+		};
+		22A60308235F069700773478 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				22A60310235F0A1A00773478 /* MainVM.swift */,
+				22A60312235F0A8B00773478 /* CountryVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		22A60309235F069700773478 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22A6030A235F069700773478 /* MainVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22A6030B235F069700773478 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22A6030C235F069700773478 /* Cell */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22A6030C235F069700773478 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		22A60314235F0AE300773478 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				22A60315235F0AE300773478 /* DataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		22B10605235F0D790086F411 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				22B10606235F0D910086F411 /* AppCoord.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		57D5B7B36C7F410167AFEB57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9E94C69AE387995FED387D2 /* Pods_PocketGDP.framework */,
+				39C31F120C2B1357E8B3AFB7 /* Pods_PocketGDP_PocketGDPUITests.framework */,
+				622F695BC8B0FE467C05F85C /* Pods_PocketGDPTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6EE94738697D7ED1759E627 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				576E9D145AAE7A583274F531 /* Pods-PocketGDP.debug.xcconfig */,
+				075C8AB3D4198B638C635548 /* Pods-PocketGDP.release.xcconfig */,
+				BF04988D4E2B34FF029F84D0 /* Pods-PocketGDP-PocketGDPUITests.debug.xcconfig */,
+				5FA39DE0900D1D204EECE117 /* Pods-PocketGDP-PocketGDPUITests.release.xcconfig */,
+				C3DC32082DB5FE734BD2C167 /* Pods-PocketGDPTests.debug.xcconfig */,
+				25EFAFA3D7D659534C7B925F /* Pods-PocketGDPTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22A602D0235ED70400773478 /* PocketGDP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A602FB235ED70500773478 /* Build configuration list for PBXNativeTarget "PocketGDP" */;
+			buildPhases = (
+				AA789302501DC8D342505DA4 /* [CP] Check Pods Manifest.lock */,
+				22A602CD235ED70400773478 /* Sources */,
+				22A602CE235ED70400773478 /* Frameworks */,
+				22A602CF235ED70400773478 /* Resources */,
+				655585F9D8409855970B77E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketGDP;
+			productName = PocketGDP;
+			productReference = 22A602D1235ED70400773478 /* PocketGDP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22A602E6235ED70500773478 /* PocketGDPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A602FE235ED70500773478 /* Build configuration list for PBXNativeTarget "PocketGDPTests" */;
+			buildPhases = (
+				5D1C07A815942BDADD13D936 /* [CP] Check Pods Manifest.lock */,
+				22A602E3235ED70500773478 /* Sources */,
+				22A602E4235ED70500773478 /* Frameworks */,
+				22A602E5235ED70500773478 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A602E9235ED70500773478 /* PBXTargetDependency */,
+			);
+			name = PocketGDPTests;
+			productName = PocketGDPTests;
+			productReference = 22A602E7235ED70500773478 /* PocketGDPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22A602F1235ED70500773478 /* PocketGDPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A60301235ED70500773478 /* Build configuration list for PBXNativeTarget "PocketGDPUITests" */;
+			buildPhases = (
+				735AB25F0FF3CBA644A27807 /* [CP] Check Pods Manifest.lock */,
+				22A602EE235ED70500773478 /* Sources */,
+				22A602EF235ED70500773478 /* Frameworks */,
+				22A602F0235ED70500773478 /* Resources */,
+				000502FB5C53FCD2CB8DBCBC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A602F4235ED70500773478 /* PBXTargetDependency */,
+			);
+			name = PocketGDPUITests;
+			productName = PocketGDPUITests;
+			productReference = 22A602F2235ED70500773478 /* PocketGDPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22A602C9235ED70400773478 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Robin Sun";
+				TargetAttributes = {
+					22A602D0235ED70400773478 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					22A602E6235ED70500773478 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 22A602D0235ED70400773478;
+					};
+					22A602F1235ED70500773478 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 22A602D0235ED70400773478;
+					};
+				};
+			};
+			buildConfigurationList = 22A602CC235ED70400773478 /* Build configuration list for PBXProject "PocketGDP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22A602C8235ED70400773478;
+			productRefGroup = 22A602D2235ED70400773478 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22A602D0235ED70400773478 /* PocketGDP */,
+				22A602E6235ED70500773478 /* PocketGDPTests */,
+				22A602F1235ED70500773478 /* PocketGDPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22A602CF235ED70400773478 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A602E1235ED70500773478 /* LaunchScreen.storyboard in Resources */,
+				22A602DE235ED70500773478 /* Assets.xcassets in Resources */,
+				22A602DC235ED70400773478 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A602E5235ED70500773478 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A602F0235ED70500773478 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		000502FB5C53FCD2CB8DBCBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketGDP-PocketGDPUITests/Pods-PocketGDP-PocketGDPUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketGDP-PocketGDPUITests/Pods-PocketGDP-PocketGDPUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PocketGDP-PocketGDPUITests/Pods-PocketGDP-PocketGDPUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D1C07A815942BDADD13D936 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PocketGDPTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		655585F9D8409855970B77E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketGDP/Pods-PocketGDP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketGDP/Pods-PocketGDP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PocketGDP/Pods-PocketGDP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		735AB25F0FF3CBA644A27807 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PocketGDP-PocketGDPUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA789302501DC8D342505DA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PocketGDP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22A602CD235ED70400773478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B10607235F0D910086F411 /* AppCoord.swift in Sources */,
+				22A6030D235F069700773478 /* MainVC.swift in Sources */,
+				22A60311235F0A1A00773478 /* MainVM.swift in Sources */,
+				22A602D5235ED70400773478 /* AppDelegate.swift in Sources */,
+				22A60316235F0AE300773478 /* DataManager.swift in Sources */,
+				22A60313235F0A8B00773478 /* CountryVM.swift in Sources */,
+				22A6030F235F075F00773478 /* Constants.swift in Sources */,
+				22A60318235F0B9200773478 /* Protocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A602E3235ED70500773478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A602EC235ED70500773478 /* PocketGDPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A602EE235ED70500773478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A602F7235ED70500773478 /* PocketGDPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22A602E9235ED70500773478 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A602D0235ED70400773478 /* PocketGDP */;
+			targetProxy = 22A602E8235ED70500773478 /* PBXContainerItemProxy */;
+		};
+		22A602F4235ED70500773478 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A602D0235ED70400773478 /* PocketGDP */;
+			targetProxy = 22A602F3235ED70500773478 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22A602DA235ED70400773478 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22A602DB235ED70400773478 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22A602DF235ED70500773478 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22A602E0235ED70500773478 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22A602F9235ED70500773478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22A602FA235ED70500773478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22A602FC235ED70500773478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 576E9D145AAE7A583274F531 /* Pods-PocketGDP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PocketGDP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robinsun.PocketGDP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22A602FD235ED70500773478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 075C8AB3D4198B638C635548 /* Pods-PocketGDP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PocketGDP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robinsun.PocketGDP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22A602FF235ED70500773478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3DC32082DB5FE734BD2C167 /* Pods-PocketGDPTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PocketGDPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robinsun.PocketGDPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketGDP.app/PocketGDP";
+			};
+			name = Debug;
+		};
+		22A60300235ED70500773478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25EFAFA3D7D659534C7B925F /* Pods-PocketGDPTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PocketGDPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robinsun.PocketGDPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketGDP.app/PocketGDP";
+			};
+			name = Release;
+		};
+		22A60302235ED70500773478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF04988D4E2B34FF029F84D0 /* Pods-PocketGDP-PocketGDPUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PocketGDPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robinsun.PocketGDPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketGDP;
+			};
+			name = Debug;
+		};
+		22A60303235ED70500773478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FA39DE0900D1D204EECE117 /* Pods-PocketGDP-PocketGDPUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PocketGDPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robinsun.PocketGDPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketGDP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22A602CC235ED70400773478 /* Build configuration list for PBXProject "PocketGDP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A602F9235ED70500773478 /* Debug */,
+				22A602FA235ED70500773478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A602FB235ED70500773478 /* Build configuration list for PBXNativeTarget "PocketGDP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A602FC235ED70500773478 /* Debug */,
+				22A602FD235ED70500773478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A602FE235ED70500773478 /* Build configuration list for PBXNativeTarget "PocketGDPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A602FF235ED70500773478 /* Debug */,
+				22A60300235ED70500773478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A60301235ED70500773478 /* Build configuration list for PBXNativeTarget "PocketGDPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A60302235ED70500773478 /* Debug */,
+				22A60303235ED70500773478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22A602C9235ED70400773478 /* Project object */;
+}
