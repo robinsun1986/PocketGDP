@@ -18,16 +18,18 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = Constants.mainTitle
-        setupTableView()
+        setupUI()
     }
     
     func inject(viewModel: MainVM) {
         self.viewModel = viewModel
     }
     
-    private func setupTableView() {
+    private func setupUI() {
+        title = Constants.mainTitle
+        labelForYear.text = Constants.yearTitle
+        labelForSorting.text = Constants.sortByTitle
+        
         tableViewForResults.dataSource = self
         tableViewForResults.delegate = self
         tableViewForResults.rowHeight = UITableView.automaticDimension
@@ -38,8 +40,28 @@ class MainVC: UIViewController {
     }
     
     @IBAction func sortByAction(_ sender: Any) {
+        // NOTE: When the action sheet shows up, there are some constraint warnings printed in the console. It seems to be a bug with iOS 12.2+.
+        // https://stackoverflow.com/questions/55372093/uialertcontrollers-actionsheet-gives-constraint-error-on-ios-12-2-12-3
+        let alertController = UIAlertController(title: Constants.sortByTitle, message: "", preferredStyle: .actionSheet)
+
+        let nameAction = UIAlertAction(title: Constants.nameTitle, style: .default, handler: { (alert: UIAlertAction!) -> Void in
+          // TODO sort by name
+        })
+
+        let gdpAction = UIAlertAction(title: Constants.GDPTitle, style: .default, handler: { (alert: UIAlertAction!) -> Void in
+          // TODO sort by GDP
+        })
+
+        let cancelAction = UIAlertAction(title: Constants.cancelTitle, style: .cancel, handler: { (alert: UIAlertAction!) -> Void in
+          //  leave it empty
+        })
+
+        alertController.addAction(nameAction)
+        alertController.addAction(gdpAction)
+        alertController.addAction(cancelAction)
+
+        present(alertController, animated: true, completion: nil)
     }
-    
 }
 
 // MARK: UITableViewDelegate
