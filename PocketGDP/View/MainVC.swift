@@ -33,6 +33,13 @@ class MainVC: UIViewController {
         tableViewForResults.rowHeight = UITableView.automaticDimension
         tableViewForResults.estimatedRowHeight = Constants.resultEstimatedRowHeight
     }
+    
+    @IBAction func yearAction() {
+    }
+    
+    @IBAction func sortByAction(_ sender: Any) {
+    }
+    
 }
 
 // MARK: UITableViewDelegate
