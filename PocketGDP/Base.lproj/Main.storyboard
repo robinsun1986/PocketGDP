@@ -133,7 +133,105 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96.799999999999997" y="135.38230884557723"/>
+            <point key="canvasLocation" x="-1586" y="38"/>
+        </scene>
+        <!--Edit CountryGDPVC-->
+        <scene sceneID="WXq-4r-kqu">
+            <objects>
+                <viewController storyboardIdentifier="EditCountryGDPVC" id="KYS-7D-mgo" customClass="EditCountryGDPVC" customModule="PocketGDP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oQx-ed-iq7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMJ-2m-h3D">
+                                <rect key="frame" x="16" y="30" width="105" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country GDP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h69-l0-hu1">
+                                <rect key="frame" x="16" y="146" width="95" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F1n-5G-OTt">
+                                <rect key="frame" x="16" y="59.5" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="w9U-3a-4pj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fT6-h0-GfA">
+                                <rect key="frame" x="16" y="175.5" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="T6p-tK-sPI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvW-wi-Stu">
+                                <rect key="frame" x="16" y="302" width="343" height="44"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="uEn-2f-ggP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="&lt;done_button&gt;"/>
+                                <connections>
+                                    <action selector="doneAction" destination="KYS-7D-mgo" eventType="touchUpInside" id="GkN-LY-psh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;country_name_error&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fC9-re-oDB">
+                                <rect key="frame" x="16" y="105.5" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;country_gdp_error&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJ2-qt-PF8">
+                                <rect key="frame" x="16" y="221.5" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="F1n-5G-OTt" firstAttribute="leading" secondItem="gMJ-2m-h3D" secondAttribute="leading" id="1eI-4i-Phc"/>
+                            <constraint firstItem="fT6-h0-GfA" firstAttribute="trailing" secondItem="F1n-5G-OTt" secondAttribute="trailing" id="1w8-zC-Mf3"/>
+                            <constraint firstItem="F1n-5G-OTt" firstAttribute="top" secondItem="gMJ-2m-h3D" secondAttribute="bottom" constant="10" id="496-cd-YpT"/>
+                            <constraint firstItem="fT6-h0-GfA" firstAttribute="top" secondItem="h69-l0-hu1" secondAttribute="bottom" constant="10" id="7qa-VN-z8q"/>
+                            <constraint firstItem="cvW-wi-Stu" firstAttribute="trailing" secondItem="F1n-5G-OTt" secondAttribute="trailing" id="91L-OS-3r0"/>
+                            <constraint firstItem="cvW-wi-Stu" firstAttribute="leading" secondItem="F1n-5G-OTt" secondAttribute="leading" id="9Py-ft-bY2"/>
+                            <constraint firstItem="gMJ-2m-h3D" firstAttribute="leading" secondItem="qkz-Kg-w7J" secondAttribute="leading" constant="16" id="9o5-lb-rvv"/>
+                            <constraint firstItem="h69-l0-hu1" firstAttribute="top" secondItem="fC9-re-oDB" secondAttribute="bottom" constant="20" id="CVV-uV-qZ4"/>
+                            <constraint firstItem="fC9-re-oDB" firstAttribute="trailing" secondItem="F1n-5G-OTt" secondAttribute="trailing" id="Kgc-l3-etW"/>
+                            <constraint firstItem="fC9-re-oDB" firstAttribute="leading" secondItem="F1n-5G-OTt" secondAttribute="leading" id="LEw-yY-hGY"/>
+                            <constraint firstItem="lJ2-qt-PF8" firstAttribute="top" secondItem="fT6-h0-GfA" secondAttribute="bottom" constant="2" id="PWi-97-OhQ"/>
+                            <constraint firstItem="lJ2-qt-PF8" firstAttribute="trailing" secondItem="fT6-h0-GfA" secondAttribute="trailing" id="TVf-mJ-sPV"/>
+                            <constraint firstItem="h69-l0-hu1" firstAttribute="leading" secondItem="gMJ-2m-h3D" secondAttribute="leading" id="UoT-K9-Zat"/>
+                            <constraint firstItem="qkz-Kg-w7J" firstAttribute="trailing" secondItem="F1n-5G-OTt" secondAttribute="trailing" constant="16" id="gqr-ga-OGN"/>
+                            <constraint firstItem="cvW-wi-Stu" firstAttribute="top" secondItem="lJ2-qt-PF8" secondAttribute="bottom" constant="60" id="gwW-17-Qno"/>
+                            <constraint firstItem="gMJ-2m-h3D" firstAttribute="top" secondItem="qkz-Kg-w7J" secondAttribute="top" constant="30" id="hfp-69-xBh"/>
+                            <constraint firstItem="fC9-re-oDB" firstAttribute="top" secondItem="F1n-5G-OTt" secondAttribute="bottom" constant="2" id="kPi-Mt-diq"/>
+                            <constraint firstItem="fT6-h0-GfA" firstAttribute="leading" secondItem="F1n-5G-OTt" secondAttribute="leading" id="qv6-NV-7Jb"/>
+                            <constraint firstItem="lJ2-qt-PF8" firstAttribute="leading" secondItem="fT6-h0-GfA" secondAttribute="leading" id="yn8-SB-Vph"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qkz-Kg-w7J"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonForDone" destination="cvW-wi-Stu" id="Cic-TC-0KP"/>
+                        <outlet property="labelForCountryGDPError" destination="lJ2-qt-PF8" id="K3X-kd-wP6"/>
+                        <outlet property="labelForCountryNameError" destination="fC9-re-oDB" id="xgQ-MV-kHs"/>
+                        <outlet property="textFieldForCountryGDP" destination="fT6-h0-GfA" id="RLS-AA-y08"/>
+                        <outlet property="textFieldForCountryName" destination="F1n-5G-OTt" id="eUn-qy-eIq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gox-z5-RZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="40"/>
         </scene>
     </scenes>
     <resources>

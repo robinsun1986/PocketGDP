@@ -12,17 +12,23 @@ import RxSwift
 import RxCocoa
 import SVProgressHUD
 
+protocol MainVCDelegate: class {
+    func requestToEditCountryGDP(countryGDPVM: CountryGDPVM)
+}
+
 class MainVC: UIViewController {
     
     @IBOutlet weak var labelForYear: UILabel!
     @IBOutlet weak var labelForSorting: UILabel!
     @IBOutlet weak var tableViewForResults: UITableView!
     
+    weak var delegate: MainVCDelegate?
     var viewModel: MainVM!
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        assert(viewModel != nil)
         setupUI()
         setupBinding()
     }
@@ -36,6 +42,7 @@ class MainVC: UIViewController {
         labelForYear.text = Constants.yearTitle
         labelForSorting.text = Constants.sortByTitle
         
+        tableViewForResults.tableFooterView = UIView()
         tableViewForResults.dataSource = self
         tableViewForResults.delegate = self
         tableViewForResults.rowHeight = UITableView.automaticDimension
@@ -132,9 +139,9 @@ extension MainVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        // TODO
-        
+        let regionVM = viewModel.displayResults.value[indexPath.section]
+        let countryGDPVM = regionVM.countryGDPs[indexPath.row]
+        delegate?.requestToEditCountryGDP(countryGDPVM: countryGDPVM)
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

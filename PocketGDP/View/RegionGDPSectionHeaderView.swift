@@ -19,6 +19,6 @@ class RegionGDPSectionHeaderView: UITableViewHeaderFooterView {
         self.viewModel = viewModel
         
         labelForName.text = viewModel.name
-        labelForGDP.text = viewModel.gdp.gdpFormat()
+        labelForGDP.text = viewModel.gdp.gdpCurrencyFormat()
     }
 }

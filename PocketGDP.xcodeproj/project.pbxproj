@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		220B6D942360E50800469CAE /* RegionGDPSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220B6D932360E50800469CAE /* RegionGDPSectionHeaderView.xib */; };
+		220B6D962360FE2600469CAE /* EditCountryGDPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220B6D952360FE2600469CAE /* EditCountryGDPVC.swift */; };
+		220B6D9A2361015400469CAE /* EditCountryGDPVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220B6D992361015300469CAE /* EditCountryGDPVM.swift */; };
+		220B6D9D2361110000469CAE /* EditCountryGDPSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220B6D9C2361110000469CAE /* EditCountryGDPSpec.swift */; };
+		220B6D9F2361169C00469CAE /* DataManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220B6D9E2361169C00469CAE /* DataManagerSpec.swift */; };
+		220B6DA323611B1600469CAE /* allCountryResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 220B6DA223611B1600469CAE /* allCountryResponse.json */; };
+		220B6DA523611D3F00469CAE /* allCountryGDP.json in Resources */ = {isa = PBXBuildFile; fileRef = 220B6DA423611D3F00469CAE /* allCountryGDP.json */; };
 		2237326B2360E19B00F62025 /* RegionGDPSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237326A2360E19B00F62025 /* RegionGDPSectionHeaderView.swift */; };
 		22A602D5235ED70400773478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A602D4235ED70400773478 /* AppDelegate.swift */; };
 		22A602DC235ED70400773478 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A602DA235ED70400773478 /* Main.storyboard */; };
 		22A602DE235ED70500773478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A602DD235ED70500773478 /* Assets.xcassets */; };
 		22A602E1235ED70500773478 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A602DF235ED70500773478 /* LaunchScreen.storyboard */; };
-		22A602EC235ED70500773478 /* PocketGDPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A602EB235ED70500773478 /* PocketGDPTests.swift */; };
 		22A602F7235ED70500773478 /* PocketGDPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A602F6235ED70500773478 /* PocketGDPUITests.swift */; };
 		22A6030D235F069700773478 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A6030A235F069700773478 /* MainVC.swift */; };
 		22A6030F235F075F00773478 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A6030E235F075F00773478 /* Constants.swift */; };
@@ -31,9 +36,9 @@
 		22B1061A236062BC0086F411 /* CountryGDPVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10618236062BC0086F411 /* CountryGDPVM.swift */; };
 		22B1061D236076200086F411 /* CountryGDPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1061B2360761F0086F411 /* CountryGDPCell.swift */; };
 		22B1061E236076200086F411 /* CountryGDPCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B1061C236076200086F411 /* CountryGDPCell.xib */; };
-		77F8AEEDB78C2091927FE007 /* Pods_PocketGDPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622F695BC8B0FE467C05F85C /* Pods_PocketGDPTests.framework */; };
 		C3F000D9EF22C4E9077BDA9F /* Pods_PocketGDP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E94C69AE387995FED387D2 /* Pods_PocketGDP.framework */; };
 		CFC17FA97A001EE48E61818A /* Pods_PocketGDP_PocketGDPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C31F120C2B1357E8B3AFB7 /* Pods_PocketGDP_PocketGDPUITests.framework */; };
+		EC6D571D207B5B2A7D21B093 /* Pods_PocketGDP_PocketGDPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5173F20C2E6D151A9870985E /* Pods_PocketGDP_PocketGDPTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,13 @@
 /* Begin PBXFileReference section */
 		075C8AB3D4198B638C635548 /* Pods-PocketGDP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDP.release.xcconfig"; path = "Target Support Files/Pods-PocketGDP/Pods-PocketGDP.release.xcconfig"; sourceTree = "<group>"; };
 		220B6D932360E50800469CAE /* RegionGDPSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegionGDPSectionHeaderView.xib; sourceTree = "<group>"; };
+		220B6D952360FE2600469CAE /* EditCountryGDPVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCountryGDPVC.swift; sourceTree = "<group>"; };
+		220B6D992361015300469CAE /* EditCountryGDPVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCountryGDPVM.swift; sourceTree = "<group>"; };
+		220B6D9B236110FF00469CAE /* PocketGDPTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PocketGDPTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		220B6D9C2361110000469CAE /* EditCountryGDPSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCountryGDPSpec.swift; sourceTree = "<group>"; };
+		220B6D9E2361169C00469CAE /* DataManagerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerSpec.swift; sourceTree = "<group>"; };
+		220B6DA223611B1600469CAE /* allCountryResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = allCountryResponse.json; sourceTree = "<group>"; };
+		220B6DA423611D3F00469CAE /* allCountryGDP.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = allCountryGDP.json; sourceTree = "<group>"; };
 		2237326A2360E19B00F62025 /* RegionGDPSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionGDPSectionHeaderView.swift; sourceTree = "<group>"; };
 		22A602D1235ED70400773478 /* PocketGDP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketGDP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A602D4235ED70400773478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +76,6 @@
 		22A602E0235ED70500773478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A602E2235ED70500773478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A602E7235ED70500773478 /* PocketGDPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketGDPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22A602EB235ED70500773478 /* PocketGDPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketGDPTests.swift; sourceTree = "<group>"; };
 		22A602ED235ED70500773478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A602F2235ED70500773478 /* PocketGDPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketGDPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A602F6235ED70500773478 /* PocketGDPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketGDPUITests.swift; sourceTree = "<group>"; };
@@ -87,12 +98,14 @@
 		22B1061C236076200086F411 /* CountryGDPCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryGDPCell.xib; sourceTree = "<group>"; };
 		25EFAFA3D7D659534C7B925F /* Pods-PocketGDPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDPTests.release.xcconfig"; path = "Target Support Files/Pods-PocketGDPTests/Pods-PocketGDPTests.release.xcconfig"; sourceTree = "<group>"; };
 		39C31F120C2B1357E8B3AFB7 /* Pods_PocketGDP_PocketGDPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketGDP_PocketGDPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5173F20C2E6D151A9870985E /* Pods_PocketGDP_PocketGDPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketGDP_PocketGDPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		576E9D145AAE7A583274F531 /* Pods-PocketGDP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDP.debug.xcconfig"; path = "Target Support Files/Pods-PocketGDP/Pods-PocketGDP.debug.xcconfig"; sourceTree = "<group>"; };
 		5FA39DE0900D1D204EECE117 /* Pods-PocketGDP-PocketGDPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDP-PocketGDPUITests.release.xcconfig"; path = "Target Support Files/Pods-PocketGDP-PocketGDPUITests/Pods-PocketGDP-PocketGDPUITests.release.xcconfig"; sourceTree = "<group>"; };
-		622F695BC8B0FE467C05F85C /* Pods_PocketGDPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketGDPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CBCD32A89C1DF71CD60948 /* Pods-PocketGDP-PocketGDPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDP-PocketGDPTests.release.xcconfig"; path = "Target Support Files/Pods-PocketGDP-PocketGDPTests/Pods-PocketGDP-PocketGDPTests.release.xcconfig"; sourceTree = "<group>"; };
 		A9E94C69AE387995FED387D2 /* Pods_PocketGDP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketGDP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF04988D4E2B34FF029F84D0 /* Pods-PocketGDP-PocketGDPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDP-PocketGDPUITests.debug.xcconfig"; path = "Target Support Files/Pods-PocketGDP-PocketGDPUITests/Pods-PocketGDP-PocketGDPUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3DC32082DB5FE734BD2C167 /* Pods-PocketGDPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDPTests.debug.xcconfig"; path = "Target Support Files/Pods-PocketGDPTests/Pods-PocketGDPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFDD927605126A7991163A96 /* Pods-PocketGDP-PocketGDPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDP-PocketGDPTests.debug.xcconfig"; path = "Target Support Files/Pods-PocketGDP-PocketGDPTests/Pods-PocketGDP-PocketGDPTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77F8AEEDB78C2091927FE007 /* Pods_PocketGDPTests.framework in Frameworks */,
+				EC6D571D207B5B2A7D21B093 /* Pods_PocketGDP_PocketGDPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,8 +180,12 @@
 		22A602EA235ED70500773478 /* PocketGDPTests */ = {
 			isa = PBXGroup;
 			children = (
-				22A602EB235ED70500773478 /* PocketGDPTests.swift */,
+				220B6DA423611D3F00469CAE /* allCountryGDP.json */,
+				220B6DA223611B1600469CAE /* allCountryResponse.json */,
+				220B6D9E2361169C00469CAE /* DataManagerSpec.swift */,
+				220B6D9C2361110000469CAE /* EditCountryGDPSpec.swift */,
 				22A602ED235ED70500773478 /* Info.plist */,
+				220B6D9B236110FF00469CAE /* PocketGDPTests-Bridging-Header.h */,
 			);
 			path = PocketGDPTests;
 			sourceTree = "<group>";
@@ -187,6 +204,7 @@
 			children = (
 				22A60310235F0A1A00773478 /* MainVM.swift */,
 				22B10618236062BC0086F411 /* CountryGDPVM.swift */,
+				220B6D992361015300469CAE /* EditCountryGDPVM.swift */,
 				22B10617236062BB0086F411 /* RegionGDPVM.swift */,
 			);
 			path = ViewModel;
@@ -201,6 +219,7 @@
 				22B1061C236076200086F411 /* CountryGDPCell.xib */,
 				2237326A2360E19B00F62025 /* RegionGDPSectionHeaderView.swift */,
 				220B6D932360E50800469CAE /* RegionGDPSectionHeaderView.xib */,
+				220B6D952360FE2600469CAE /* EditCountryGDPVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,7 +257,7 @@
 			children = (
 				A9E94C69AE387995FED387D2 /* Pods_PocketGDP.framework */,
 				39C31F120C2B1357E8B3AFB7 /* Pods_PocketGDP_PocketGDPUITests.framework */,
-				622F695BC8B0FE467C05F85C /* Pods_PocketGDPTests.framework */,
+				5173F20C2E6D151A9870985E /* Pods_PocketGDP_PocketGDPTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -252,6 +271,8 @@
 				5FA39DE0900D1D204EECE117 /* Pods-PocketGDP-PocketGDPUITests.release.xcconfig */,
 				C3DC32082DB5FE734BD2C167 /* Pods-PocketGDPTests.debug.xcconfig */,
 				25EFAFA3D7D659534C7B925F /* Pods-PocketGDPTests.release.xcconfig */,
+				EFDD927605126A7991163A96 /* Pods-PocketGDP-PocketGDPTests.debug.xcconfig */,
+				76CBCD32A89C1DF71CD60948 /* Pods-PocketGDP-PocketGDPTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -286,6 +307,7 @@
 				22A602E3235ED70500773478 /* Sources */,
 				22A602E4235ED70500773478 /* Frameworks */,
 				22A602E5235ED70500773478 /* Resources */,
+				4F646732AB0CA5541E897E51 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -332,6 +354,7 @@
 					};
 					22A602E6235ED70500773478 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 						TestTargetID = 22A602D0235ED70400773478;
 					};
 					22A602F1235ED70500773478 = {
@@ -377,6 +400,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220B6DA523611D3F00469CAE /* allCountryGDP.json in Resources */,
+				220B6DA323611B1600469CAE /* allCountryResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +432,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PocketGDP-PocketGDPUITests/Pods-PocketGDP-PocketGDPUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4F646732AB0CA5541E897E51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketGDP-PocketGDPTests/Pods-PocketGDP-PocketGDPTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketGDP-PocketGDPTests/Pods-PocketGDP-PocketGDPTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PocketGDP-PocketGDPTests/Pods-PocketGDP-PocketGDPTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5D1C07A815942BDADD13D936 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -422,7 +464,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PocketGDPTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PocketGDP-PocketGDPTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -510,8 +552,10 @@
 				22A60316235F0AE300773478 /* DataManager.swift in Sources */,
 				22B1060D236012F80086F411 /* APIRouter.swift in Sources */,
 				22A6030F235F075F00773478 /* Constants.swift in Sources */,
+				220B6D9A2361015400469CAE /* EditCountryGDPVM.swift in Sources */,
 				22B10609235FBBB30086F411 /* CriteriaButton.swift in Sources */,
 				22A60318235F0B9200773478 /* Protocols.swift in Sources */,
+				220B6D962360FE2600469CAE /* EditCountryGDPVC.swift in Sources */,
 				22B1061D236076200086F411 /* CountryGDPCell.swift in Sources */,
 				22B1061423604B1C0086F411 /* AllCountryResponse.swift in Sources */,
 			);
@@ -521,7 +565,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22A602EC235ED70500773478 /* PocketGDPTests.swift in Sources */,
+				220B6D9F2361169C00469CAE /* DataManagerSpec.swift in Sources */,
+				220B6D9D2361110000469CAE /* EditCountryGDPSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,10 +767,11 @@
 		};
 		22A602FF235ED70500773478 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3DC32082DB5FE734BD2C167 /* Pods-PocketGDPTests.debug.xcconfig */;
+			baseConfigurationReference = EFDD927605126A7991163A96 /* Pods-PocketGDP-PocketGDPTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PocketGDPTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
@@ -736,6 +782,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.robinsun.PocketGDPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PocketGDPTests/PocketGDPTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketGDP.app/PocketGDP";
@@ -744,10 +792,11 @@
 		};
 		22A60300235ED70500773478 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25EFAFA3D7D659534C7B925F /* Pods-PocketGDPTests.release.xcconfig */;
+			baseConfigurationReference = 76CBCD32A89C1DF71CD60948 /* Pods-PocketGDP-PocketGDPTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PocketGDPTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
@@ -758,6 +807,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.robinsun.PocketGDPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PocketGDPTests/PocketGDPTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketGDP.app/PocketGDP";

@@ -29,10 +29,22 @@ enum HttpMethod: String {
 }
 
 extension Double {
-    func gdpFormat() -> String {
+    func gdpCurrencyFormat() -> String {
         let formatter = NumberFormatter()
         formatter.locale = Locale(identifier: "en_US_POSIX")
         formatter.numberStyle = .currencyAccounting
+
+        var res = ""
+        if let formattedGdpAmount = formatter.string(from: self as NSNumber) {
+            res = formattedGdpAmount
+        }
+        return res
+    }
+    
+    func gdpDecimalFormat() -> String {
+        let formatter = NumberFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.numberStyle = .decimal
 
         var res = ""
         if let formattedGdpAmount = formatter.string(from: self as NSNumber) {

@@ -42,14 +42,6 @@ enum APIRouter {
         }
     }
     
-    // MARK: - Parameters
-    private var parameters: [String : Any]? {
-        switch self {
-        case .allCountryGDP, .allCountry:
-            return nil
-        }
-    }
-    
     // MARK: - URLRequestConvertible
     func asURLRequest() throws -> URLRequest {
         // path
@@ -68,16 +60,6 @@ enum APIRouter {
         
         // HTTP Method
         urlRequest.httpMethod = method.rawValue
-        
-        // Parameters
-        if let parameters = parameters {
-            do {
-                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
-            } catch {
-                // TODO
-//                throw AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error))
-            }
-        }
         
         return urlRequest
     }

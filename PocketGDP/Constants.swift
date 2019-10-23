@@ -22,6 +22,13 @@ enum Constants {
     static let regionSectionHeaderView = "RegionGDPSectionHeaderView"
     static let regionSecionHeaderViewHeight: CGFloat = 120
     
+    static let countryNameTitle = "Country name"
+    static let countryGDPTitle = "Country GDP"
+    static let countryNameInvalidError = "Invalid country name."
+    static let countryGDPInvalidError = "Invalid country GDP."
+    static let doneTitle = "Done"
+    static let editCountryGDPTitle = "Edit Country GDP"
+    
     static let criteriaButtonHighlightColor = UIColor(red: 232/255.0, green: 232/255.0, blue: 232/255.0, alpha: 1.0)
     static let baseURL = "https://api.worldbank.org/v2"
     static let httpHeaderContentType = "Content-Type"

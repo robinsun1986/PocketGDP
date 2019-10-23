@@ -1,0 +1,92 @@
+[
+    {
+        "page": 1,
+        "pages": 1,
+        "per_page": 500,
+        "total": 5,
+        "sourceid": "24",
+        "lastupdated": "2019-10-16"
+    },
+    [
+        {
+            "indicator": {
+                "id": "NY.GDP.MKTP.CD",
+                "value": "GDP (current US$)"
+            },
+            "country": {
+                "id": "VI",
+                "value": "Virgin Islands (U.S.)"
+            },
+            "countryiso3code": "VIR",
+            "date": "2017",
+            "value": 3855000000,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "NY.GDP.MKTP.CD",
+                "value": "GDP (current US$)"
+            },
+            "country": {
+                "id": "PS",
+                "value": "West Bank and Gaza"
+            },
+            "countryiso3code": "PSE",
+            "date": "2017",
+            "value": 14498100000,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "NY.GDP.MKTP.CD",
+                "value": "GDP (current US$)"
+            },
+            "country": {
+                "id": "YE",
+                "value": "Yemen, Rep."
+            },
+            "countryiso3code": "YEM",
+            "date": "2017",
+            "value": 26818703092.5852,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "NY.GDP.MKTP.CD",
+                "value": "GDP (current US$)"
+            },
+            "country": {
+                "id": "ZM",
+                "value": "Zambia"
+            },
+            "countryiso3code": "ZMB",
+            "date": "2017",
+            "value": 25868142076.7897,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "NY.GDP.MKTP.CD",
+                "value": "GDP (current US$)"
+            },
+            "country": {
+                "id": "ZW",
+                "value": "Zimbabwe"
+            },
+            "countryiso3code": "ZWE",
+            "date": "2017",
+            "value": 22813010116.1292,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        }
+    ]
+]

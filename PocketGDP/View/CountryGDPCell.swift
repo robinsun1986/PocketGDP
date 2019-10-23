@@ -23,6 +23,6 @@ class CountryGDPCell: UITableViewCell {
         self.viewModel = viewModel
         
         labelForCountryName.text = viewModel.name
-        labelForGDP.text = viewModel.gdp.gdpFormat()
+        labelForGDP.text = viewModel.gdp.gdpCurrencyFormat()
     }
 }

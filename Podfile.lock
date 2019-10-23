@@ -3,6 +3,21 @@ PODS:
   - Alamofire (5.0.0-rc.2)
   - AlamofireNetworkActivityLogger (3.0.0):
     - Alamofire (~> 5.0.0-rc.2)
+  - Nimble (8.0.4)
+  - OHHTTPStubs/Core (8.0.0)
+  - OHHTTPStubs/Default (8.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (8.0.0)
+  - OHHTTPStubs/Swift (8.0.0):
+    - OHHTTPStubs/Default
+  - Quick (2.1.0)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -15,6 +30,9 @@ DEPENDENCIES:
   - ActionSheetPicker-3.0 (~> 2.3.0)
   - Alamofire (~> 5.0.0-rc.2)
   - AlamofireNetworkActivityLogger (~> 3.0)
+  - Nimble (~> 8.0.1)
+  - OHHTTPStubs/Swift (= 8.0.0)
+  - Quick (~> 2.1.0)
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
   - SVProgressHUD (~> 2.2.0)
@@ -24,6 +42,9 @@ SPEC REPOS:
     - ActionSheetPicker-3.0
     - Alamofire
     - AlamofireNetworkActivityLogger
+    - Nimble
+    - OHHTTPStubs
+    - Quick
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -33,11 +54,14 @@ SPEC CHECKSUMS:
   ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
   Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
   AlamofireNetworkActivityLogger: 94e8a7d454a4a9800cef1d0c1d3699754493684b
+  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
+  OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 0b8d994369b2e4286b297f1b8e26480f3cf3b816
+PODFILE CHECKSUM: 4799fbad45aa64ff2cc7cb2fa0deb4a38e315a8c
 
 COCOAPODS: 1.8.4

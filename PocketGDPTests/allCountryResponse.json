@@ -1,0 +1,150 @@
+[
+    {
+        "page": 1,
+        "pages": 1,
+        "per_page": "500",
+        "total": 5
+    },
+    [
+        {
+            "id": "XZN",
+            "iso2Code": "A5",
+            "name": "Sub-Saharan Africa excluding South Africa and Nigeria",
+            "region": {
+                "id": "NA",
+                "iso2code": "NA",
+                "value": "Aggregates"
+            },
+            "adminregion": {
+                "id": "",
+                "iso2code": "",
+                "value": ""
+            },
+            "incomeLevel": {
+                "id": "NA",
+                "iso2code": "NA",
+                "value": "Aggregates"
+            },
+            "lendingType": {
+                "id": "",
+                "iso2code": "",
+                "value": "Aggregates"
+            },
+            "capitalCity": "",
+            "longitude": "",
+            "latitude": ""
+        },
+        {
+            "id": "YEM",
+            "iso2Code": "YE",
+            "name": "Yemen, Rep.",
+            "region": {
+                "id": "MEA",
+                "iso2code": "ZQ",
+                "value": "Middle East & North Africa"
+            },
+            "adminregion": {
+                "id": "MNA",
+                "iso2code": "XQ",
+                "value": "Middle East & North Africa (excluding high income)"
+            },
+            "incomeLevel": {
+                "id": "LIC",
+                "iso2code": "XM",
+                "value": "Low income"
+            },
+            "lendingType": {
+                "id": "IDX",
+                "iso2code": "XI",
+                "value": "IDA"
+            },
+            "capitalCity": "Sana'a",
+            "longitude": "44.2075",
+            "latitude": "15.352"
+        },
+        {
+            "id": "ZAF",
+            "iso2Code": "ZA",
+            "name": "South Africa",
+            "region": {
+                "id": "SSF",
+                "iso2code": "ZG",
+                "value": "Sub-Saharan Africa "
+            },
+            "adminregion": {
+                "id": "SSA",
+                "iso2code": "ZF",
+                "value": "Sub-Saharan Africa (excluding high income)"
+            },
+            "incomeLevel": {
+                "id": "UMC",
+                "iso2code": "XT",
+                "value": "Upper middle income"
+            },
+            "lendingType": {
+                "id": "IBD",
+                "iso2code": "XF",
+                "value": "IBRD"
+            },
+            "capitalCity": "Pretoria",
+            "longitude": "28.1871",
+            "latitude": "-25.746"
+        },
+        {
+            "id": "ZMB",
+            "iso2Code": "ZM",
+            "name": "Zambia",
+            "region": {
+                "id": "SSF",
+                "iso2code": "ZG",
+                "value": "Sub-Saharan Africa "
+            },
+            "adminregion": {
+                "id": "SSA",
+                "iso2code": "ZF",
+                "value": "Sub-Saharan Africa (excluding high income)"
+            },
+            "incomeLevel": {
+                "id": "LMC",
+                "iso2code": "XN",
+                "value": "Lower middle income"
+            },
+            "lendingType": {
+                "id": "IDX",
+                "iso2code": "XI",
+                "value": "IDA"
+            },
+            "capitalCity": "Lusaka",
+            "longitude": "28.2937",
+            "latitude": "-15.3982"
+        },
+        {
+            "id": "ZWE",
+            "iso2Code": "ZW",
+            "name": "Zimbabwe",
+            "region": {
+                "id": "SSF",
+                "iso2code": "ZG",
+                "value": "Sub-Saharan Africa"
+            },
+            "adminregion": {
+                "id": "SSA",
+                "iso2code": "ZF",
+                "value": "Sub-Saharan Africa (excluding high income)"
+            },
+            "incomeLevel": {
+                "id": "LMC",
+                "iso2code": "XN",
+                "value": "Lower middle income"
+            },
+            "lendingType": {
+                "id": "IDB",
+                "iso2code": "XH",
+                "value": "Blend"
+            },
+            "capitalCity": "Harare",
+            "longitude": "31.0672",
+            "latitude": "-17.8312"
+        }
+    ]
+]
