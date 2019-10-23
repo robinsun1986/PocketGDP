@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220B6D942360E50800469CAE /* RegionGDPSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220B6D932360E50800469CAE /* RegionGDPSectionHeaderView.xib */; };
+		2237326B2360E19B00F62025 /* RegionGDPSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237326A2360E19B00F62025 /* RegionGDPSectionHeaderView.swift */; };
 		22A602D5235ED70400773478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A602D4235ED70400773478 /* AppDelegate.swift */; };
 		22A602DC235ED70400773478 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A602DA235ED70400773478 /* Main.storyboard */; };
 		22A602DE235ED70500773478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A602DD235ED70500773478 /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		075C8AB3D4198B638C635548 /* Pods-PocketGDP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDP.release.xcconfig"; path = "Target Support Files/Pods-PocketGDP/Pods-PocketGDP.release.xcconfig"; sourceTree = "<group>"; };
+		220B6D932360E50800469CAE /* RegionGDPSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegionGDPSectionHeaderView.xib; sourceTree = "<group>"; };
+		2237326A2360E19B00F62025 /* RegionGDPSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionGDPSectionHeaderView.swift; sourceTree = "<group>"; };
 		22A602D1235ED70400773478 /* PocketGDP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketGDP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A602D4235ED70400773478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22A602DB235ED70400773478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 				22A6030A235F069700773478 /* MainVC.swift */,
 				22B1061B2360761F0086F411 /* CountryGDPCell.swift */,
 				22B1061C236076200086F411 /* CountryGDPCell.xib */,
+				2237326A2360E19B00F62025 /* RegionGDPSectionHeaderView.swift */,
+				220B6D932360E50800469CAE /* RegionGDPSectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -362,6 +368,7 @@
 				22A602E1235ED70500773478 /* LaunchScreen.storyboard in Resources */,
 				22A602DE235ED70500773478 /* Assets.xcassets in Resources */,
 				22B1061E236076200086F411 /* CountryGDPCell.xib in Resources */,
+				220B6D942360E50800469CAE /* RegionGDPSectionHeaderView.xib in Resources */,
 				22A602DC235ED70400773478 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +500,7 @@
 				22B10607235F0D910086F411 /* AppCoord.swift in Sources */,
 				22B10611236022A40086F411 /* AllCountryGDPResponse.swift in Sources */,
 				22A6030D235F069700773478 /* MainVC.swift in Sources */,
+				2237326B2360E19B00F62025 /* RegionGDPSectionHeaderView.swift in Sources */,
 				22B1060B235FD7CF0086F411 /* APIManager.swift in Sources */,
 				22A60311235F0A1A00773478 /* MainVM.swift in Sources */,
 				22A602D5235ED70400773478 /* AppDelegate.swift in Sources */,

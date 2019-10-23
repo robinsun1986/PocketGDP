@@ -8,10 +8,10 @@
 
 import Foundation
 
-class CountryGDPVM {
+class CountryGDPVM: GDPEntityVM {
     let id: String
-    let name: String
-    let gdp: Double
+    var name: String
+    var gdp: Double
     
     init(id: String, name: String, gdp: Double) {
         self.id = id

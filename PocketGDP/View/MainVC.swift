@@ -20,8 +20,6 @@ class MainVC: UIViewController {
     
     var viewModel: MainVM!
     private let disposeBag = DisposeBag()
-    // TEST
-    let dataManager = DataManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +41,9 @@ class MainVC: UIViewController {
         tableViewForResults.rowHeight = UITableView.automaticDimension
         tableViewForResults.estimatedRowHeight = Constants.resultEstimatedRowHeight
         tableViewForResults.register(UINib(nibName: Constants.countryGDPCellId, bundle: nil), forCellReuseIdentifier: Constants.countryGDPCellId)
+        tableViewForResults.sectionHeaderHeight = UITableView.automaticDimension
+        tableViewForResults.estimatedSectionHeaderHeight = Constants.regionSecionHeaderViewHeight
+        tableViewForResults.register(UINib(nibName: Constants.regionSectionHeaderView, bundle: nil), forHeaderFooterViewReuseIdentifier: Constants.regionSectionHeaderView)
     }
     
     private func setupBinding() {
@@ -52,6 +53,7 @@ class MainVC: UIViewController {
         
         viewModel.selectedSortBy.asDriver().drive(onNext: { [weak self] sortBy in
             self?.labelForSorting.text = sortBy
+            self?.viewModel.updateDisplayResults()
         }).disposed(by: disposeBag)
         
         viewModel.loading.asDriver().drive(onNext: { val in
@@ -64,6 +66,9 @@ class MainVC: UIViewController {
         
         viewModel.displayResults.asDriver().drive(onNext: { [weak self] sortBy in
             self?.tableViewForResults.reloadData()
+            DispatchQueue.main.async { [weak self] in
+                self?.tableViewForResults.setContentOffset(.zero, animated: true)
+            }
         }).disposed(by: disposeBag)
     }
     
@@ -128,5 +133,14 @@ extension MainVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        // TODO
+        
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let regionHeaderView = tableView.dequeueReusableHeaderFooterView(withIdentifier: Constants.regionSectionHeaderView) as! RegionGDPSectionHeaderView
+        let regionVM = viewModel.displayResults.value[section]
+        regionHeaderView.configure(regionVM)
+        return regionHeaderView
     }
 }

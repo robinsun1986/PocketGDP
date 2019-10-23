@@ -32,7 +32,7 @@ extension Double {
     func gdpFormat() -> String {
         let formatter = NumberFormatter()
         formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.numberStyle = .currency
+        formatter.numberStyle = .currencyAccounting
 
         var res = ""
         if let formattedGdpAmount = formatter.string(from: self as NSNumber) {
@@ -40,4 +40,9 @@ extension Double {
         }
         return res
     }
+}
+
+protocol GDPEntityVM {
+    var name: String { get }
+    var gdp: Double { get }
 }

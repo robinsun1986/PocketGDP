@@ -8,9 +8,9 @@
 
 import Foundation
 
-class RegionGDPVM {
+class RegionGDPVM: GDPEntityVM {
     let id: String
-    let name: String
+    var name: String
     var gdp: Double = 0.0
     var countryGDPs = [CountryGDPVM]()
     

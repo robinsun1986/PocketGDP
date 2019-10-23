@@ -18,13 +18,14 @@ class MainVM {
     var selectedYearIndex = BehaviorRelay<Int>(value: 0)
     var selectedSortBy = BehaviorRelay<String>(value: Constants.nameTitle)
     var errorMessage = BehaviorRelay<String?>(value: nil)
-    var allCountryRefreshed = BehaviorRelay(value: false)
-    var allCountryGDPRefreshed = BehaviorRelay(value: false)
+    var isLoadingCountry = BehaviorRelay(value: false)
+    var isLoadingCountryGDP = BehaviorRelay(value: false)
     var loading = BehaviorRelay(value: false)
     let dataManager: DataManager
     private let disposeBag = DisposeBag()
     var cachedYearResults = [String : [RegionGDPVM]]()
     var displayResults = BehaviorRelay(value: [RegionGDPVM]())
+    var currentYearResults = [RegionGDPVM]()
     
     var countryModels = [Country]()
     var countryGDPModels = [CountryGDP]()
@@ -36,19 +37,19 @@ class MainVM {
 
             let selectedYear = self.yearItems[yearIndex]
             
-            let cachedResults = self.cachedYearResults[selectedYear] ?? [RegionGDPVM]()
-            if cachedResults.isEmpty {
+            self.currentYearResults = self.cachedYearResults[selectedYear] ?? [RegionGDPVM]()
+            if self.currentYearResults.isEmpty {
                 self.fetchAllCountry()
                 self.fetchAllCountryGDP()
             } else {
-                self.updateDisplayResults(cachedResults)
+                self.updateDisplayResults()
             }
             
         }).disposed(by: disposeBag)
         
-        Driver.combineLatest(allCountryRefreshed.asDriver(), allCountryGDPRefreshed.asDriver()).drive(onNext: { [unowned self] countryRefreshed, countryGDPRefreshed in
+        Driver.combineLatest(isLoadingCountry.asDriver(), isLoadingCountryGDP.asDriver()).drive(onNext: { [unowned self] loadingCountry, loadingCountryGDP in
             
-            let loading = !(countryRefreshed && countryGDPRefreshed)
+            let loading = loadingCountry || loadingCountryGDP
             self.loading.accept(loading)
             
             if !loading {
@@ -59,31 +60,30 @@ class MainVM {
     }
     
     private func fetchAllCountry() {
-        self.allCountryRefreshed.accept(false)
+        self.isLoadingCountry.accept(true)
         dataManager.fetchAllCountry { response in
             switch(response) {
             case .success(let countries):
-                self.allCountryRefreshed.accept(true)
                 self.countryModels = countries
-                break
+                self.isLoadingCountry.accept(false)
             case .error(let apiError):
-                self.allCountryRefreshed.accept(true)
+                self.isLoadingCountry.accept(false)
                 self.errorMessage.accept(apiError.message)
             }
         }
     }
     
     private func fetchAllCountryGDP() {
-        allCountryGDPRefreshed.accept(false)
+        isLoadingCountryGDP.accept(true)
         let year = yearItems[selectedYearIndex.value]
         dataManager.fetchAllCountryGDP(year: year) { response in
             switch(response) {
             case .success(let countryGDPs):
-                self.allCountryGDPRefreshed.accept(true)
                 self.countryGDPModels = countryGDPs
+                self.isLoadingCountryGDP.accept(false)
                 break
             case .error(let apiError):
-                self.allCountryGDPRefreshed.accept(true)
+                self.isLoadingCountryGDP.accept(false)
                 self.errorMessage.accept(apiError.message)
             }
         }
@@ -105,19 +105,33 @@ class MainVM {
                 }
             }
         }
-        updateDisplayResults(Array(regionVMDict.values))
+        
+        currentYearResults = Array(regionVMDict.values)
+        let year = yearItems[selectedYearIndex.value]
+        cachedYearResults[year] = currentYearResults
+        updateDisplayResults()
     }
     
-    func updateDisplayResults(_ cachedResults: [RegionGDPVM]) {
-        cachedResults.forEach { $0.updateGDP() }
-        
-        let results = cachedResults.sorted { [unowned self] lhs, rhs -> Bool in
-            if (self.selectedSortBy.value == Constants.nameTitle) {
-                return lhs.name < rhs.name
-            } else {
-                return lhs.gdp > rhs.gdp
+    func updateDisplayResults() {
+        currentYearResults.forEach {
+            $0.updateGDP()
+            
+            $0.countryGDPs = $0.countryGDPs.sorted { [unowned self] lhs, rhs -> Bool in
+                return self.sortGDPEntity(lhs: lhs, rhs: rhs)
             }
         }
+        
+        let results = currentYearResults.sorted { [unowned self] lhs, rhs -> Bool in
+            return self.sortGDPEntity(lhs: lhs, rhs: rhs)
+        }
         displayResults.accept(results)
+    }
+    
+    private func sortGDPEntity(lhs: GDPEntityVM, rhs: GDPEntityVM) -> Bool {
+        if (selectedSortBy.value == Constants.nameTitle) {
+            return lhs.name < rhs.name
+        } else {
+            return lhs.gdp > rhs.gdp
+        }
     }
 }
