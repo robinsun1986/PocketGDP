@@ -19,7 +19,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rha-zj-GlT" userLabel="year" customClass="CriteriaButton" customModule="PocketGDP" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="52.5"/>
                                 <connections>
-                                    <action selector="yearAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="XRX-hT-l6e"/>
+                                    <action selector="yearAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TR2-5J-dzS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFn-2c-Q3K" userLabel="sortBy" customClass="CriteriaButton" customModule="PocketGDP" customModuleProvider="target">

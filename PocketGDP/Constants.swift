@@ -16,6 +16,7 @@ enum Constants {
     static let nameTitle = "Name"
     static let GDPTitle = "GDP"
     static let cancelTitle = "Cancel"
+    static let selectYearTitle = "Select Year"
     static let resultEstimatedRowHeight: CGFloat = 210
     
     static let criteriaButtonHighlightColor = UIColor(red: 232/255.0, green: 232/255.0, blue: 232/255.0, alpha: 1.0)
