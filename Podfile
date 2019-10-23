@@ -9,6 +9,7 @@ def app_pods
   pod 'ActionSheetPicker-3.0', '~> 2.3.0'
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
+  pod 'SVProgressHUD', '~> 2.2.0'
 end
 
 target 'PocketGDP' do

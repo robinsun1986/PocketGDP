@@ -16,7 +16,6 @@
 		22A6030D235F069700773478 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A6030A235F069700773478 /* MainVC.swift */; };
 		22A6030F235F075F00773478 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A6030E235F075F00773478 /* Constants.swift */; };
 		22A60311235F0A1A00773478 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A60310235F0A1A00773478 /* MainVM.swift */; };
-		22A60313235F0A8B00773478 /* CountryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A60312235F0A8B00773478 /* CountryVM.swift */; };
 		22A60316235F0AE300773478 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A60315235F0AE300773478 /* DataManager.swift */; };
 		22A60318235F0B9200773478 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A60317235F0B9200773478 /* Protocols.swift */; };
 		22B10607235F0D910086F411 /* AppCoord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10606235F0D910086F411 /* AppCoord.swift */; };
@@ -26,6 +25,10 @@
 		22B1060F23601E2F0086F411 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1060E23601E2E0086F411 /* APIError.swift */; };
 		22B10611236022A40086F411 /* AllCountryGDPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10610236022A40086F411 /* AllCountryGDPResponse.swift */; };
 		22B1061423604B1C0086F411 /* AllCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1061323604B1C0086F411 /* AllCountryResponse.swift */; };
+		22B10619236062BC0086F411 /* RegionGDPVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10617236062BB0086F411 /* RegionGDPVM.swift */; };
+		22B1061A236062BC0086F411 /* CountryGDPVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10618236062BC0086F411 /* CountryGDPVM.swift */; };
+		22B1061D236076200086F411 /* CountryGDPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1061B2360761F0086F411 /* CountryGDPCell.swift */; };
+		22B1061E236076200086F411 /* CountryGDPCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B1061C236076200086F411 /* CountryGDPCell.xib */; };
 		77F8AEEDB78C2091927FE007 /* Pods_PocketGDPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622F695BC8B0FE467C05F85C /* Pods_PocketGDPTests.framework */; };
 		C3F000D9EF22C4E9077BDA9F /* Pods_PocketGDP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E94C69AE387995FED387D2 /* Pods_PocketGDP.framework */; };
 		CFC17FA97A001EE48E61818A /* Pods_PocketGDP_PocketGDPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C31F120C2B1357E8B3AFB7 /* Pods_PocketGDP_PocketGDPUITests.framework */; };
@@ -65,7 +68,6 @@
 		22A6030A235F069700773478 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		22A6030E235F075F00773478 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		22A60310235F0A1A00773478 /* MainVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
-		22A60312235F0A8B00773478 /* CountryVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryVM.swift; sourceTree = "<group>"; };
 		22A60315235F0AE300773478 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		22A60317235F0B9200773478 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		22B10606235F0D910086F411 /* AppCoord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoord.swift; sourceTree = "<group>"; };
@@ -75,6 +77,10 @@
 		22B1060E23601E2E0086F411 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		22B10610236022A40086F411 /* AllCountryGDPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryGDPResponse.swift; sourceTree = "<group>"; };
 		22B1061323604B1C0086F411 /* AllCountryResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCountryResponse.swift; sourceTree = "<group>"; };
+		22B10617236062BB0086F411 /* RegionGDPVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionGDPVM.swift; sourceTree = "<group>"; };
+		22B10618236062BC0086F411 /* CountryGDPVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryGDPVM.swift; sourceTree = "<group>"; };
+		22B1061B2360761F0086F411 /* CountryGDPCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryGDPCell.swift; sourceTree = "<group>"; };
+		22B1061C236076200086F411 /* CountryGDPCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryGDPCell.xib; sourceTree = "<group>"; };
 		25EFAFA3D7D659534C7B925F /* Pods-PocketGDPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDPTests.release.xcconfig"; path = "Target Support Files/Pods-PocketGDPTests/Pods-PocketGDPTests.release.xcconfig"; sourceTree = "<group>"; };
 		39C31F120C2B1357E8B3AFB7 /* Pods_PocketGDP_PocketGDPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketGDP_PocketGDPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		576E9D145AAE7A583274F531 /* Pods-PocketGDP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDP.debug.xcconfig"; path = "Target Support Files/Pods-PocketGDP/Pods-PocketGDP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,7 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				22A60310235F0A1A00773478 /* MainVM.swift */,
-				22A60312235F0A8B00773478 /* CountryVM.swift */,
+				22B10618236062BC0086F411 /* CountryGDPVM.swift */,
+				22B10617236062BB0086F411 /* RegionGDPVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -186,6 +193,8 @@
 			children = (
 				22B10608235FBBB30086F411 /* CriteriaButton.swift */,
 				22A6030A235F069700773478 /* MainVC.swift */,
+				22B1061B2360761F0086F411 /* CountryGDPCell.swift */,
+				22B1061C236076200086F411 /* CountryGDPCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,6 +361,7 @@
 			files = (
 				22A602E1235ED70500773478 /* LaunchScreen.storyboard in Resources */,
 				22A602DE235ED70500773478 /* Assets.xcassets in Resources */,
+				22B1061E236076200086F411 /* CountryGDPCell.xib in Resources */,
 				22A602DC235ED70400773478 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,13 +496,15 @@
 				22B1060B235FD7CF0086F411 /* APIManager.swift in Sources */,
 				22A60311235F0A1A00773478 /* MainVM.swift in Sources */,
 				22A602D5235ED70400773478 /* AppDelegate.swift in Sources */,
+				22B10619236062BC0086F411 /* RegionGDPVM.swift in Sources */,
 				22B1060F23601E2F0086F411 /* APIError.swift in Sources */,
+				22B1061A236062BC0086F411 /* CountryGDPVM.swift in Sources */,
 				22A60316235F0AE300773478 /* DataManager.swift in Sources */,
-				22A60313235F0A8B00773478 /* CountryVM.swift in Sources */,
 				22B1060D236012F80086F411 /* APIRouter.swift in Sources */,
 				22A6030F235F075F00773478 /* Constants.swift in Sources */,
 				22B10609235FBBB30086F411 /* CriteriaButton.swift in Sources */,
 				22A60318235F0B9200773478 /* Protocols.swift in Sources */,
+				22B1061D236076200086F411 /* CountryGDPCell.swift in Sources */,
 				22B1061423604B1C0086F411 /* AllCountryResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

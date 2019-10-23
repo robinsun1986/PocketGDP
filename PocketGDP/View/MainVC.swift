@@ -10,6 +10,7 @@ import UIKit
 import ActionSheetPicker_3_0
 import RxSwift
 import RxCocoa
+import SVProgressHUD
 
 class MainVC: UIViewController {
     
@@ -26,11 +27,6 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupBinding()
-        
-        // TEST
-        dataManager.fetchAllCountry { _ in
-            
-        }
     }
     
     func inject(viewModel: MainVM) {
@@ -46,6 +42,7 @@ class MainVC: UIViewController {
         tableViewForResults.delegate = self
         tableViewForResults.rowHeight = UITableView.automaticDimension
         tableViewForResults.estimatedRowHeight = Constants.resultEstimatedRowHeight
+        tableViewForResults.register(UINib(nibName: Constants.countryGDPCellId, bundle: nil), forCellReuseIdentifier: Constants.countryGDPCellId)
     }
     
     private func setupBinding() {
@@ -55,6 +52,18 @@ class MainVC: UIViewController {
         
         viewModel.selectedSortBy.asDriver().drive(onNext: { [weak self] sortBy in
             self?.labelForSorting.text = sortBy
+        }).disposed(by: disposeBag)
+        
+        viewModel.loading.asDriver().drive(onNext: { val in
+            if val {
+                SVProgressHUD.show()
+            } else {
+                SVProgressHUD.dismiss()
+            }
+        }).disposed(by: disposeBag)
+        
+        viewModel.displayResults.asDriver().drive(onNext: { [weak self] sortBy in
+            self?.tableViewForResults.reloadData()
         }).disposed(by: disposeBag)
     }
     
@@ -100,14 +109,24 @@ class MainVC: UIViewController {
 
 // MARK: UITableViewDelegate, UITableViewDelegate
 extension MainVC: UITableViewDataSource, UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return viewModel.displayResults.value.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        let regionVM = viewModel.displayResults.value[section]
+        return regionVM.countryGDPs.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.countryGDPCellId, for: indexPath) as! CountryGDPCell
+        let regionVM = viewModel.displayResults.value[indexPath.section]
+        let countryGDPVM = regionVM.countryGDPs[indexPath.row]
+        cell.configure(countryGDPVM)
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
 }

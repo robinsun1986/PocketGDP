@@ -18,6 +18,7 @@ enum Constants {
     static let cancelTitle = "Cancel"
     static let selectYearTitle = "Select Year"
     static let resultEstimatedRowHeight: CGFloat = 210
+    static let countryGDPCellId = "CountryGDPCell"
     
     static let criteriaButtonHighlightColor = UIColor(red: 232/255.0, green: 232/255.0, blue: 232/255.0, alpha: 1.0)
     static let baseURL = "https://api.worldbank.org/v2"

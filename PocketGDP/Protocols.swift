@@ -27,3 +27,17 @@ protocol ResponseErrorProtocol: Error {
 enum HttpMethod: String {
     case POST, GET, PUT, DELETE, CONNECT, HEAD, OPTIONS, PATCH
 }
+
+extension Double {
+    func gdpFormat() -> String {
+        let formatter = NumberFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.numberStyle = .currency
+
+        var res = ""
+        if let formattedGdpAmount = formatter.string(from: self as NSNumber) {
+            res = formattedGdpAmount
+        }
+        return res
+    }
+}

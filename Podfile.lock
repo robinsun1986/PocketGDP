@@ -9,6 +9,7 @@ PODS:
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0 (~> 2.3.0)
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - AlamofireNetworkActivityLogger (~> 3.0)
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
+  - SVProgressHUD (~> 2.2.0)
 
 SPEC REPOS:
   trunk:
@@ -25,6 +27,7 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
@@ -33,7 +36,8 @@ SPEC CHECKSUMS:
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 61c84a85468880a4903c7eab5d584779d79b4f99
+PODFILE CHECKSUM: 0b8d994369b2e4286b297f1b8e26480f3cf3b816
 
 COCOAPODS: 1.8.4

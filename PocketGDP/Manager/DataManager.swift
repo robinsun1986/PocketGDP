@@ -16,12 +16,16 @@ class DataManager: DataProtocol {
         didSet {
             var regionsSet = Set<CountryRegion>()
             cachedCountries.forEach { regionsSet.insert($0.region) }
-            cachedRegions = Array(cachedRegions)
+            cachedRegions = Array(regionsSet)
         }
     }
     
     init(network: APIManager = APIManager.default) {
         self.network = network
+    }
+    
+    static var `default`: DataManager {
+        return DataManager()
     }
     
     func fetchAllCountryGDP(year: String, completion: @escaping (_ response: Response<[CountryGDP]>) -> Void) {
