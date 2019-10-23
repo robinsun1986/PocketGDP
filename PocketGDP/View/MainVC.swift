@@ -19,11 +19,18 @@ class MainVC: UIViewController {
     
     var viewModel: MainVM!
     private let disposeBag = DisposeBag()
+    // TEST
+    let dataManager = DataManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         setupBinding()
+        
+        // TEST
+        dataManager.fetchAllCountry { _ in
+            
+        }
     }
     
     func inject(viewModel: MainVM) {

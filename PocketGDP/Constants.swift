@@ -20,4 +20,8 @@ enum Constants {
     static let resultEstimatedRowHeight: CGFloat = 210
     
     static let criteriaButtonHighlightColor = UIColor(red: 232/255.0, green: 232/255.0, blue: 232/255.0, alpha: 1.0)
+    static let baseURL = "https://api.worldbank.org/v2"
+    static let httpHeaderContentType = "Content-Type"
+    static let httpHeaderAccept = "Accept"
+    static let httpApplicationJson = "application/json"
 }

@@ -8,7 +8,22 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 protocol DataProtocol {
 
+}
+
+// represent a generic response to an operation request
+enum Response<T> {
+    case success(_: T)
+    case error(ResponseErrorProtocol)
+}
+
+protocol ResponseErrorProtocol: Error {
+    var message: String { get }
+}
+
+enum HttpMethod: String {
+    case POST, GET, PUT, DELETE, CONNECT, HEAD, OPTIONS, PATCH
 }

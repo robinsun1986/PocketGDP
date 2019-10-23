@@ -1,6 +1,8 @@
 PODS:
   - ActionSheetPicker-3.0 (2.3.0)
   - Alamofire (5.0.0-rc.2)
+  - AlamofireNetworkActivityLogger (3.0.0):
+    - Alamofire (~> 5.0.0-rc.2)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -11,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - ActionSheetPicker-3.0 (~> 2.3.0)
   - Alamofire (~> 5.0.0-rc.2)
+  - AlamofireNetworkActivityLogger (~> 3.0)
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
 
@@ -18,6 +21,7 @@ SPEC REPOS:
   trunk:
     - ActionSheetPicker-3.0
     - Alamofire
+    - AlamofireNetworkActivityLogger
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -25,10 +29,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
   Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  AlamofireNetworkActivityLogger: 94e8a7d454a4a9800cef1d0c1d3699754493684b
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
-PODFILE CHECKSUM: 51498032f559d20ed4981c57de21c8c3c87a615a
+PODFILE CHECKSUM: 61c84a85468880a4903c7eab5d584779d79b4f99
 
 COCOAPODS: 1.8.4

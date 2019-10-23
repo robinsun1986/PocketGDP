@@ -16,4 +16,9 @@ class MainVM {
 
     var selectedYearIndex = BehaviorRelay<Int>(value: 0)
     var selectedSortBy = BehaviorRelay<String>(value: Constants.nameTitle)
+    let network: APIManager
+    
+    init(network: APIManager = APIManager.default) {
+        self.network = network
+    }
 }

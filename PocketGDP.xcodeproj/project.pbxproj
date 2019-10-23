@@ -21,6 +21,11 @@
 		22A60318235F0B9200773478 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A60317235F0B9200773478 /* Protocols.swift */; };
 		22B10607235F0D910086F411 /* AppCoord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10606235F0D910086F411 /* AppCoord.swift */; };
 		22B10609235FBBB30086F411 /* CriteriaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10608235FBBB30086F411 /* CriteriaButton.swift */; };
+		22B1060B235FD7CF0086F411 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1060A235FD7CF0086F411 /* APIManager.swift */; };
+		22B1060D236012F80086F411 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1060C236012F80086F411 /* APIRouter.swift */; };
+		22B1060F23601E2F0086F411 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1060E23601E2E0086F411 /* APIError.swift */; };
+		22B10611236022A40086F411 /* AllCountryGDPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10610236022A40086F411 /* AllCountryGDPResponse.swift */; };
+		22B1061423604B1C0086F411 /* AllCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1061323604B1C0086F411 /* AllCountryResponse.swift */; };
 		77F8AEEDB78C2091927FE007 /* Pods_PocketGDPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622F695BC8B0FE467C05F85C /* Pods_PocketGDPTests.framework */; };
 		C3F000D9EF22C4E9077BDA9F /* Pods_PocketGDP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E94C69AE387995FED387D2 /* Pods_PocketGDP.framework */; };
 		CFC17FA97A001EE48E61818A /* Pods_PocketGDP_PocketGDPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C31F120C2B1357E8B3AFB7 /* Pods_PocketGDP_PocketGDPUITests.framework */; };
@@ -65,6 +70,11 @@
 		22A60317235F0B9200773478 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		22B10606235F0D910086F411 /* AppCoord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoord.swift; sourceTree = "<group>"; };
 		22B10608235FBBB30086F411 /* CriteriaButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriteriaButton.swift; sourceTree = "<group>"; };
+		22B1060A235FD7CF0086F411 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		22B1060C236012F80086F411 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		22B1060E23601E2E0086F411 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		22B10610236022A40086F411 /* AllCountryGDPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryGDPResponse.swift; sourceTree = "<group>"; };
+		22B1061323604B1C0086F411 /* AllCountryResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCountryResponse.swift; sourceTree = "<group>"; };
 		25EFAFA3D7D659534C7B925F /* Pods-PocketGDPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDPTests.release.xcconfig"; path = "Target Support Files/Pods-PocketGDPTests/Pods-PocketGDPTests.release.xcconfig"; sourceTree = "<group>"; };
 		39C31F120C2B1357E8B3AFB7 /* Pods_PocketGDP_PocketGDPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketGDP_PocketGDPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		576E9D145AAE7A583274F531 /* Pods-PocketGDP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGDP.debug.xcconfig"; path = "Target Support Files/Pods-PocketGDP/Pods-PocketGDP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,21 +193,18 @@
 		22A6030B235F069700773478 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				22A6030C235F069700773478 /* Cell */,
+				22B10610236022A40086F411 /* AllCountryGDPResponse.swift */,
+				22B1061323604B1C0086F411 /* AllCountryResponse.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		22A6030C235F069700773478 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		22A60314235F0AE300773478 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				22B1060E23601E2E0086F411 /* APIError.swift */,
+				22B1060C236012F80086F411 /* APIRouter.swift */,
+				22B1060A235FD7CF0086F411 /* APIManager.swift */,
 				22A60315235F0AE300773478 /* DataManager.swift */,
 			);
 			path = Manager;
@@ -474,14 +481,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B10607235F0D910086F411 /* AppCoord.swift in Sources */,
+				22B10611236022A40086F411 /* AllCountryGDPResponse.swift in Sources */,
 				22A6030D235F069700773478 /* MainVC.swift in Sources */,
+				22B1060B235FD7CF0086F411 /* APIManager.swift in Sources */,
 				22A60311235F0A1A00773478 /* MainVM.swift in Sources */,
 				22A602D5235ED70400773478 /* AppDelegate.swift in Sources */,
+				22B1060F23601E2F0086F411 /* APIError.swift in Sources */,
 				22A60316235F0AE300773478 /* DataManager.swift in Sources */,
 				22A60313235F0A8B00773478 /* CountryVM.swift in Sources */,
+				22B1060D236012F80086F411 /* APIRouter.swift in Sources */,
 				22A6030F235F075F00773478 /* Constants.swift in Sources */,
 				22B10609235FBBB30086F411 /* CriteriaButton.swift in Sources */,
 				22A60318235F0B9200773478 /* Protocols.swift in Sources */,
+				22B1061423604B1C0086F411 /* AllCountryResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
